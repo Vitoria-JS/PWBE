@@ -1,0 +1,1379 @@
+body{
+    background-image: url(../imagens/fundoMadeira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoRiscado{
+    text-decoration: line-through;
+}
+
+.center{
+    padding-left: 45px;
+}
+
+.texto, .formatItem, .tituloCombo{
+    font-family: cursive;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.formatItem{
+    color: #EAA81F;
+}
+
+.tituloCombo{
+    font-size: 25px;
+    margin: 5px;
+    text-align: left;
+}
+
+h2{
+    width: 800px;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.h2empresa{
+    font-size: 34px;
+    font-family: sans-serif;
+    color: #EAA81F;
+}
+
+.pempresa{
+    width: 400px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-align: justify;
+}
+
+.h1empresa{
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.centraliza{    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Teste logico para que a programação funcione em dispositivos de monitor minimo 300px*/
+@media screen and (min-device-width:1300px){
+    /*CABEÇALHO*/
+
+    header{
+        width: 100%;
+        height: 200px;
+        background-color: #323231;
+        padding-top: 7px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .input{
+        font-size: 12px;
+    }
+
+    .button{
+    /*    border:1px solid #964b00;*/
+        border-radius:4px;
+        display:inline-block;
+        cursor:pointer;
+        font-family:cursive;
+        font-weight:bold;
+        font-size:13px;
+        text-decoration:none;
+        color: white;
+        background-color: #101010;
+    }
+
+    .alinhar{
+        width: 1400px;
+        height: 190px;
+    }
+    
+    #containerMenuMobile{
+        display: none;
+    }
+
+    #logo, .imgLogo{
+        width: 195px;
+        height: 185px;
+        border-radius: 250px;
+        margin-right: 40px;
+        float: left;
+    }
+    
+    #containerMenu{
+        width: 770px;
+        height: 50px;
+        margin-top: 70px;
+    }
+    
+    #menu{
+        width: inherit;
+        height: inherit;
+        float: left;
+        padding-top: 5px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 69px;
+    }
+
+    .menuItem{
+        width: auto;
+        height: 35px;
+        margin-right: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .menuItem:hover >.formatItem{
+        background-color: #EAA81F;
+        color: black;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    #autenticacaoCMS{
+        margin-top: 55px;
+        float: left;
+    }
+
+    .login{
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    /*CONTAINER CONTEUDO*/
+
+    #containerGeral, #containerGeralContato, #containerGeralMes{
+        width: 1400px;
+        min-height: 700px;
+        height: auto;
+        overflow: hidden;
+        background-color: black;
+        display: block;
+        padding-top: 205px;
+        box-sizing: border-box;
+    }
+
+    #containerGeralContato, #containerGeralMes{
+        background-image: url(../imagens/contate.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #containerGeralMes{
+        background-image: url(../imagens/montagem1.jpg);
+    }
+
+    #slider{
+        margin-top: 205px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        width: 1390px;
+        height: 400px;
+    }
+
+    .imageSlider{
+        width: 1390px;
+        height: 400px;
+        display: flex;
+    }
+
+    #prev, #next{
+        width: 50px;
+        height: 400px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding-top: 182.5px;
+        box-sizing: border-box;
+        font-family: 'comic sans ms';
+        font-size: 2em;
+        user-select: none;
+        cursor: pointer;
+        margin-right: 5px;
+        margin-left: 5px;
+        position: absolute;
+        z-index: 998;
+        opacity: 0;
+    }
+
+    #prev{
+        margin-left: 0px;
+    }
+
+    #next{
+        margin-left: 1340px;
+    }
+
+    .buttons:hover{
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    #slider:hover > .buttons{
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    #menuVertical{
+        width: 200px;
+        min-height: inherit;
+        float: left;
+        color: white;
+    }
+
+    .menuVItem{
+        width: 180px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-size: 20px;
+        padding-top: 15px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .menuVItem:hover{
+        background-color: #EAA81F;
+        color: black;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #menuVerticalMob{
+        display: none;
+    }
+#menuMobileV{
+        display: none;
+    }
+.menuVItemMob{
+    display: none;
+    }
+    
+    .menuVItemMob:hover{
+        display: none;
+    }
+
+    .conteudoEmpresaVerticalEsquerdo, .conteudoEmpresaVerticalDireito{
+        width: 698px;
+        height: 1200px;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .conteudoEmpresaVerticalDireito{
+        float: right;
+    }
+
+
+    .conteudoEmpresaVerticalEsquerdoSuperior{
+        padding-left: 230px;
+        box-sizing: border-box;
+        width: 680px;
+        height: 450px;
+    }
+
+    .conteudoEmpresaVerticalEsquerdoInferior{
+        margin-top: 100px;
+        width: 680px;
+        height: 600px;
+    }
+
+    .imgempresa{
+        width: 570px;
+        height: 490px;
+        margin-left: 50px;
+    }
+
+    .imgempresa2{
+        margin-left: 140px;
+    }
+
+    .imgempresa2, .imgempresa3{
+        width: 550px;
+        height: 500px;
+        margin-top: 150px;
+
+    }
+
+    .imgempresa3{
+        margin-left: 40px;
+        margin-top: -150px;    
+    }
+
+    .promocoes{
+        font-size: 22px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .lojas, .curiosidades, .empresa, .produtomes, .promocoes, .contato{
+        font-size: 22px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .contato, .produtomes{
+        width: 1400px;
+        height: 50px;
+        background-color: #101010;
+    }
+
+    .lojas{
+        margin-bottom: 50px;
+    }
+
+    #containerHamburguer, #containerHamburguerPromocoes, #containerHamburguerProdutoMes{
+        margin-top: 25px;
+        margin-left: 5px;
+        width: 390px;
+        height: 350px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    #containerCuriosidadesSuperior, #containerCuriosidadesInferior{
+        width: 1350px;
+        height: 500px;
+    }
+
+    #containerCuriosidadesInferior{
+        padding-left: 224px;
+        padding-right: 224px;
+        box-sizing: border-box;
+    }
+
+    .curiosidadesVeg{
+        width: 430px;
+        height: 430px;
+        float: left;
+        margin-left: 09px;
+        margin-right: 09px;
+    }
+
+    #imgVeg1{
+        background-image: url(../imagens/vegano1.webp);
+    }
+
+    #imgVeg2{
+        background-image: url(../imagens/vegano2.jpg);
+    }
+
+    #imgVeg3{
+        background-image: url(../imagens/vegetariano1.jpg);
+    }
+
+    #imgVeg4{
+        background-image: url(../imagens/vegetariano2.jpg);
+    }
+
+    #imgVeg5{
+        background-image: url(../imagens/vegetariano3.jpg);
+    }
+
+    #imgVeg1, #imgVeg2, #imgVeg3, #imgVeg4, #imgVeg5{
+        padding-top: 1px;
+        margin-left: 09px;
+        margin-right: 09px;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-size: 428px 428px;
+    }
+
+    .slogancuriosidades{
+        width: 300px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        font-family: "comic sans";
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    #imgVeg1:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg2:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg3:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg4:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg5:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+
+    #containerHamburguerPromocoes{
+        margin-left: 50px;
+        width: 1100px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
+    #sloganProdutoMes{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 550px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        font-family: "comic sans";
+        font-size: 26px;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .imgProduto, .containerImg{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .containerImgCombo{
+        width: 500px;
+        height: 348px;
+        margin-right: 150px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 5px;
+    }
+
+    .containerHamburguerEmpresa1, .containerHamburguerEmpresa3{
+        width: 650px;
+        height: 300px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    .containerHamburguerEmpresa2, .containerHamburguerEmpresa4{
+        width: 650px;
+        height: 300px;
+        float: right;
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
+
+    .containerImgEmpresa{
+        width: 400px;
+        height: 300px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border-radius: 8px;
+        float: left;
+    }
+
+    .card{
+        font-family: cursive;
+        color: white;
+        font-size: 15px;
+        line-height: 30px;
+        float: right;
+        box-sizing: border-box;
+    }
+
+    .descricaoEmpresa, .descricaoPromocao{
+        width: auto;
+        height: auto;
+        font-family: cursive;
+        font-size: 17px;
+        color: white;
+    }
+
+    .descricaoEmpresa{
+        float: none;
+        margin-top: 310px;
+    }
+
+    .descricaoPromocao{
+        line-height: 30px;
+        margin-top: 65px;
+    }
+
+    #cadastro{
+        width: 600px;
+        min-height: 585px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .campos{
+        width: auto;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .cadastroInformacoesPessoais{
+        width: 150px;
+        height: 55px;
+        float: left;
+        z-index: 998;
+        text-align: center;
+        font-size: 1.3em;
+        padding-top: 10px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 20px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        color: white;
+
+    }
+
+    .cadastroEntradaDeDados, {
+        width: 150px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .cadastroEntradaDeDados input {
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .cadastroEntradaDeDados textarea{
+        width: 300px;
+        height: 100px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .enviar input{
+        width: 150px;
+        height: auto;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+    }
+    .enviar{
+        width: 100;
+        height: 50px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /*REDES SOCIAIS*/
+
+    #redesSociais{
+        width: 75px;
+        height: 250px;
+        float: left;
+        margin-left: 1405px;
+        position: absolute;
+    }
+
+    .iconeRs{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /*RODAPE*/
+
+    #rodape{
+        width: 1400px;
+        height: 100px;
+        background-color: #323231;
+    }
+    
+    #rodapeMobile{
+        display: none;
+    }
+
+    #endereco{
+        float: left;
+        font-size: 20px;
+        padding-left: 50px;
+        margin-top: 50px;
+    }
+
+    #imgApk, .apk{
+        width: 80px;
+        height: 80px;
+        float: left;
+        padding-left: 20px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+    .btnClick{
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        float: left;
+        color: #EAA81F;
+        margin-left: 20px;
+    }
+
+    .sistemaInterno, .baixarApp{
+        margin-top: 25px;
+    }
+    
+     #containerMenu{
+        width: 800px;
+        height: inherit;
+        float: left;
+    }
+
+    #menu{
+        width: inherit;
+        height: inherit;
+    }
+
+    #menu li{
+        list-style: none;
+        width: 120px;
+        height: inherit;
+        float: left;
+        font-family: sans-serif;
+        font-size: 1.4em;
+        color: white;
+        text-align: center;
+        padding-top: 35px;
+        box-sizing: border-box;
+    }
+
+    #menu li:hover{
+        background-color: mediumblue;
+        cursor: pointer;
+    }
+}
+
+/**Dispositivo: Mobile*/
+
+@media screen and (max-device-width:780px)
+{
+    .textoMob{
+    font-family: cursive;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+    /*CABEÇALHO*/
+
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: #323231;
+        padding-top: 7px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .input{
+        font-size: 12px;
+        display: none;
+    }
+
+    .button{
+    /*    border:1px solid #964b00;*/
+        border-radius:4px;
+        display:inline-block;
+        cursor:pointer;
+        font-family:cursive;
+        font-weight:bold;
+        font-size:13px;
+        text-decoration:none;
+        color: white;
+        background-color: #101010;
+        display: none;
+    }
+
+    .alinhar{
+        width: 100%;
+        height: 100px;
+    }
+    
+    #containerMenuMobile{
+        position: fixed;
+        width: 90px;
+        height: 90px;
+        background-color: #323231;
+/*        border: solid 1px white;*/
+    }
+
+    #iconeMenu{
+        width: 90px;
+        height: 90px;
+        background-image: url(../imagens/icone.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    
+     #menuMobile{
+        width: 50%;
+        height: 23%;
+        background-color: rgba(0,0,0,0.7);
+        position: fixed;
+        z-index: 999;
+        display: none;
+    }
+    
+    #menu{
+        width: inherit;
+        height: inherit;
+    }
+    
+    #menu li{
+        list-style: none;
+        width: auto;
+        height: 35px;
+        margin-right: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    #logo, .imgLogo{
+        width: 100px;
+        height: 90px;
+        border-radius: 250px;
+        margin-left: 220px;
+        float: left;
+    }
+    
+    #containerMenu{
+        display: none;
+    }
+
+    #menu{
+        width: 770px;
+        height: 50px;
+        float: left;
+        padding-top: 5px;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-top: 69px;
+    }
+
+    .menuItem{
+        width: auto;
+        height: 35px;
+        margin-right: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        float: left;
+        display: none;
+    }
+
+    .menuItem:hover >.formatItem{
+        display: none;
+    }
+
+    #autenticacaoCMS{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    /*CONTAINER CONTEUDO*/
+
+    #containerGeral, #containerGeralContato, #containerGeralMes{
+        width: 100%;
+        min-height: 1200px;
+        height: auto;
+        overflow: hidden;
+        background-color: black;
+        display: block;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+
+    #containerGeralContato, #containerGeralMes{
+        background-image: url(../imagens/contate.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #containerGeralMes{
+        background-image: url(../imagens/montagem1.jpg);
+    }
+
+    #slider{
+        margin-top: 205px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+    .imageSlider{
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+
+    #prev, #next{
+        width: 50px;
+        height: 400px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding-top: 182.5px;
+        box-sizing: border-box;
+        font-family: 'comic sans ms';
+        font-size: 2em;
+        user-select: none;
+        cursor: pointer;
+        margin-right: 5px;
+        margin-left: 5px;
+        position: absolute;
+        z-index: 998;
+        opacity: 0;
+        display: none;
+    }
+
+    #prev{
+        margin-left: 0px;
+        display: none;
+    }
+
+    #next{
+        margin-left: 95%;
+        display: none;
+    }
+
+    .buttons:hover{
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    #slider:hover > .buttons{
+        transition: 0.5s;
+        opacity: 1;
+        display: none
+    }
+
+    #menuVertical{
+        display: none;
+    }
+    
+    
+    .menuVItem{
+        display: none;
+    }
+    
+    .menuVItem:hover{
+        display: none;
+    }
+    
+    #containerMenuMobV{
+        width: 90px;
+        height: 90px;
+        background-color: black;
+    }
+    
+    #iconeMenuV{
+        width: 80px;
+        height: 80px;
+        background-image: url(../imagens/icone.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    
+    #menuMobileV{
+        width: 100%;
+        height: 20%;
+        background-color: rgba(0,0,0,0.7);
+        z-index: 999;
+        display: none;
+    }
+    
+    #menuMobV{
+        width: inherit;
+        height: inherit;
+    }
+    
+    .menuVItemMob{
+        list-style: none;
+        width: auto;
+        height: 35px;
+        margin-right: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+    
+    .conteudoEmpresaVerticalEsquerdo, .conteudoEmpresaVerticalDireito{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .conteudoEmpresaVerticalEsquerdoSuperior{
+        padding-left: 280px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+
+    .conteudoEmpresaVerticalEsquerdoInferior{
+        width: 100%;
+        height: 500px;
+    }
+
+    .imgempresa{
+        width: 100%;
+        height: 490px;
+    }
+
+    .imgempresa2{
+        margin-bottom: 20px;       
+    }
+    
+    .imgempresa2, .imgempresa3{
+        width: 100%;
+        height: 500px;
+    }
+
+    .promocoes{
+        font-size: 22px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .lojas, .curiosidades, .empresa, .produtomes, .promocoes, .contato{
+        font-size: 22px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .contato, .produtomes{
+        width: 100%;
+        height: 50px;
+        background-color: #101010;
+    }
+
+    .lojas{
+        margin-bottom: 50px;
+    }
+
+    #containerHamburguer, #containerHamburguerPromocoes, #containerHamburguerProdutoMes{
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 550px;
+        box-sizing: border-box;
+    }
+
+    #containerCuriosidadesSuperior, #containerCuriosidadesInferior{
+        width: 100%;
+        height: auto;
+    }
+
+    #containerCuriosidadesInferior{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .curiosidadesVeg{
+        width: 100%;
+        height: 430px;
+        float: left;
+        margin-left: 09px;
+        margin-right: 09px;
+    }
+
+    #imgVeg1{
+        background-image: url(../imagens/vegano1.webp);
+    }
+
+    #imgVeg2{
+        background-image: url(../imagens/vegano2.jpg);
+    }
+
+    #imgVeg3{
+        background-image: url(../imagens/vegetariano1.jpg);
+    }
+
+    #imgVeg4{
+        background-image: url(../imagens/vegetariano2.jpg);
+    }
+
+    #imgVeg5{
+        width: 100%;
+        height: 100%;
+        background-image: url(../imagens/vegetariano3.jpg);
+    }
+
+    #imgVeg1, #imgVeg2, #imgVeg3, #imgVeg4, #imgVeg5{
+        padding-top: 1px;
+        margin-left: 09px;
+        margin-right: 09px;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-size: 100% 100%;
+    }
+
+    .slogancuriosidades{
+        width: 300px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        font-family: "comic sans";
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    #imgVeg1:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg2:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg3:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg4:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #imgVeg5:hover > .slogancuriosidades{
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+
+    #containerHamburguerPromocoes{
+        margin-left: 50px;
+        width: 1100px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
+
+    #sloganProdutoMes{
+        margin-top: 200px;
+        margin-bottom: 100px;
+        width: 550px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        font-family: "comic sans";
+        font-size: 26px;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .imgProduto, .containerImg{
+        width: 100%;
+        height: 450px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    .containerImgCombo{
+        width: 500px;
+        height: 348px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        float: left;
+        border-radius: 5px;
+    }
+
+    .containerHamburguerEmpresa1, .containerHamburguerEmpresa3{
+        width: 100%;
+        height: 400px;
+        float: left;
+/*        margin-left: 20px;*/
+        margin-right: 10px;
+        margin-bottom: 100px;
+    }
+
+    .containerHamburguerEmpresa2, .containerHamburguerEmpresa4{
+        width: 100%;
+        height: 400px;
+        float: right;
+/*        margin-right: 20px;*/
+        margin-bottom: 100px;
+    }
+
+    .containerImgEmpresa{
+        width: 500px;
+        height: 400px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border-radius: 8px;
+        float: left;
+    }
+
+    .card{
+        font-family: cursive;
+        color: white;
+        font-size: 30px;
+        line-height: 30px;
+        float: right;
+        box-sizing: border-box;
+    }
+
+    .descricaoEmpresa, .descricaoPromocao{
+        width: 600px;
+        height: auto;
+        font-family: cursive;
+        font-size: 17px;
+        color: white;
+    }
+
+    .descricaoEmpresa{
+        float: none;
+        margin-top: 310px;
+    }
+
+    .descricaoPromocao{
+        line-height: 30px;
+        margin-top: 65px;
+    }
+
+    #cadastro{
+        width: 90%;
+        min-height: 585px;
+        margin-top: 200px;
+        height: auto;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    .campos{
+        width: auto;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .cadastroInformacoesPessoais{
+        width: 250px;
+        height: 55px;
+        float: left;
+        z-index: 998;
+        text-align: center;
+        font-size: 2.3em;
+        padding-top: 10px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 30px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        color: white;
+
+    }
+
+    .cadastroEntradaDeDados, {
+        width: 150px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .cadastroEntradaDeDados input {
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .cadastroEntradaDeDados textarea{
+        width: 440px;
+        height: 100px;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .enviar input{
+        width: 150px;
+        height: auto;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+    }
+    .enviar{
+        width: 100px;
+        height: 50px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /*REDES SOCIAIS*/
+
+    #redesSociais{
+        display: none;
+    }
+    
+    .iconeRs{
+        display: none;
+    }
+    
+    #redesSociaisMobile{
+        width: 390px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconeRsMob{
+        width: 80px;
+        height: 80px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    /*RODAPE*/
+
+    #rodape{
+        width: 100%;
+        height: 100px;
+        background-color: #323231;
+        display: none;
+    }
+    
+    #rodapeMobile{
+        width: 100%;
+        height: 100px;
+        background-color: #323231;
+    }
+
+    #endereco{
+        float: left;
+        font-size: 20px;
+        padding-left: 50px;
+        margin-top: 50px;
+        display: none;
+    }
+
+    #imgApk, .apk{
+        width: 80px;
+        height: 80px;
+        float: left;
+        padding-left: 20px;
+        margin-top: 5px;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .btnClick{
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        float: left;
+        color: #EAA81F;
+        margin-left: 20px;
+        display: none;
+    }
+
+    .sistemaInterno, .baixarApp{
+        margin-top: 25px;
+        display: none;
+    }
+    
+    p{
+        font-size: 25px;
+    }
+    
+    
+}
